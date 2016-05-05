@@ -11,7 +11,55 @@
     tools:context="com.udacity.cabral.portfolio.MainActivity">
 
     <TextView
-        android:text="Hello World!"
+        android:id="@+id/main_header"
+        android:text="@string/main_header"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_header">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/main_popular_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_popular_movies"
+            android:theme="@style/PortfolioTheme.Button"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/main_stock_hawk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_stock_hawk"
+            android:theme="@style/PortfolioTheme.Button"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/main_build_it_bigger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_build_it_bigger"
+            android:theme="@style/PortfolioTheme.Button"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/main_make_your_app_material"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_make_your_app_material"
+            android:theme="@style/PortfolioTheme.Button"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/main_go_ubiquitous"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_go_ubiquitous"
+            android:theme="@style/PortfolioTheme.Button"/>
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/main_capstone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_capstone"
+            android:theme="@style/PortfolioTheme.Button"/>
+
+    </LinearLayout>
 </RelativeLayout>
